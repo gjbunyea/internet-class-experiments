@@ -21,8 +21,8 @@ Step-by-step:
 (3)  Install Postfix library support for Perl regexes:  "sudo apt-get install postfix-pcre"
 	This will be necessary to support outgoing whitelisting using the method described below.
 
-(4)  Edit the /etc/postfix/main.cf file to Enable relay (Telnet) access for nodes in desired IP nets.  For example,
-	to enable computers in the 128.205.36.X (timberlake is 128.205.36.8) subnet to be able to relay email, 
+(4)  Edit the /etc/postfix/main.cf file to enable relay (Telnet) access for nodes in desired IP nets.  For example,
+	to enable computers in the 128.205.36.X subnet (timberlake is 128.205.36.8) to be able to relay email, 
 	edit the _existing_ "mynetworks" line and add "128.205.36.0/24".  The line when finished should look something like this:
 
 		mynetworks = 127.0.0.0/8 128.205.36.0/24 [::ffff:127.0.0.0]/104 [::1]/128
@@ -50,7 +50,8 @@ Step-by-step:
 Troubleshooting / FYIs:
 	-The main Postfix configuration files are (usually?) located in /etc/postfix
 	-The main Postfix logfile is /var/log/mail.log -- useful for detecting errors
-	-This all assumes that WAN ports are open.  That is, 
+	-This all assumes that WAN ports are open.  That is, the default port of 25
+	 cannot be blocked by host firewalls or infrastructure routers.
 
 N.b. -- the Postfix installation, by default, restricts relay access to  (1)  authenticated users
 	("permit_sasl_authenticated") and  (2)  the list of IP nets specified in the "mynetworks" -- typically,
@@ -69,6 +70,6 @@ N.b. -- For futurework, a script can be set to be run upon receipt of every inco
 
 ----------
 
-**This has been tested with Postfix 2.11 on Ubuntu 14.04 LTS and Postfix 3.11 on Ubuntu 16.04 LTS
+**The above has been tested with Postfix 2.11 on Ubuntu 14.04 LTS and Postfix 3.11 on Ubuntu 16.04 LTS
 
 

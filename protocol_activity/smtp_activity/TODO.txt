@@ -1,0 +1,15 @@
+
+TODO, as of 2016-09-07:
+
+-Test smpt server on spinners from UB wireless
+	^is port 25 open/blocked within UB?  Possibly move port uphill.
+	^what IP nets (on which the WiFi APs outside Bert's are located) need to be added to Postfix whitelists?
+
+-Install dedicated server (virtual image?)  **Need server / image
+
+-Get dedicated destination email address (e.g. submissions@internet-class.org) set up and tested
+
+-Coordinate with HTTP subproject -- possibly expect specific input
+
+-Coordinate with 199 submission site (Dan et al) -- how will we process received data?
+

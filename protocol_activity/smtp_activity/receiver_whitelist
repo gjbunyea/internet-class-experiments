@@ -1,0 +1,2 @@
+/^submissions@internet-class.org$/ OK
+/^.*$/ DEFER

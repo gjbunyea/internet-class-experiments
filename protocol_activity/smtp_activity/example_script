@@ -1,0 +1,42 @@
+Script started on Wed 07 Sep 2016 09:52:45 PM EDT
+timberlake {~} > pwd
+/home/unmdue/carlnues
+timberlake {~} > telnet spinners.cse.buffalo.edu 25
+Trying 128.205.39.155...
+Connected to spinners.cse.buffalo.edu (128.205.39.155).
+Escape character is '^]'.
+220 spinners.cse.buffalo.edu ESMTP Postfix (Ubuntu)
+EH  ehlo spinners
+250-spinners.cse.buffalo.edu
+250-PIPELINING
+250-SIZE 10240000
+250-VRFY
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250 DSN
+mail from:foo@bar
+250 2.1.0 Ok
+rcpt to:asdf@asdf
+450 4.7.1 <asdf@asdf>: Recipient address rejected: Access denied
+rcpt to:asdf@buffalo.edu
+450 4.7.1 <asdf@buffalo.edu>: Recipient address rejected: Access denied
+rcpt to:carlnues@asdf.qwer
+450 4.7.1 <carlnues@asdf.qwer>: Recipient address rejected: Access denied
+rcpt to:carlnues@buffalo.edu
+250 2.1.5 Ok
+data
+354 End data with <CR><LF>.<CR><LF>
+subject:Test email sent from Timberlak                         manual email submission
+FYI this email is being generated using telnet and relayed via               from timberlake and relayed via spinners.
+Goodbye       ing going goine   ne.
+.
+250 2.0.0 Ok: queued as 63CC6700604
+quit
+221 2.0.0 Bye
+Connection closed by foreign host.
+timberlake {~} > exit
+exit
+
+Script done on Wed 07 Sep 2016 09:55:01 PM EDT

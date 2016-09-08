@@ -1,5 +1,6 @@
 
-cse199 -- In-class Protocol Activity -- Manual Generation of Emails
+cse199 -- In-class Protocol Activity -- Manual Generation of Emails -- 2016-09-07
+
 
 ----------
 Goal: to have a locally installed SMTP server that:
@@ -45,6 +46,7 @@ Step-by-step:
 (7)  Test and use etc.  Check logfiles for errors (see below).
 
 
+----------
 Troubleshooting / FYIs:
 	-The main Postfix configuration files are (usually?) located in /etc/postfix
 	-The main Postfix logfile is /var/log/mail.log -- useful for detecting errors
@@ -65,9 +67,8 @@ N.b. -- For futurework, a script can be set to be run upon receipt of every inco
 	Google up "run script of smpt receipt" etc.
 
 
+----------
+
 **This has been tested with Postfix 2.11 on Ubuntu 14.04 LTS and Postfix 3.11 on Ubuntu 16.04 LTS
-
-EXAMPLE:
-
 
 
